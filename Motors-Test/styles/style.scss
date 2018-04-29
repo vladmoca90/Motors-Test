@@ -13,12 +13,18 @@ body {
             justify-content: space-between;
 
             @media screen and (max-width: 767px) {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 
-        &__text:nth-of-type(1) {
-            padding-right: 15px;
+        &__text {
+            img {
+                width: 18%;
+            }
+
+            &:nth-of-type(1) {
+                padding-right: 15px;
+            }
         }
     }
 
@@ -38,15 +44,45 @@ body {
 
         &__carousel {
             margin-bottom: 100px;
+            position: relative;
+
             @media screen and (max-width: 767px) {
                 margin-bottom: 0;
             }
+
+            &-banner {
+                border-bottom: 33px solid #646464;
+                border-left: 33px solid transparent;
+                border-right: 33px solid transparent;
+                color: #fff;
+                height: 0;
+                left: -40px;
+                line-height: 32px;
+                position: absolute;
+                text-align: center;
+                transform: rotate(-45deg);
+                top: 40px;
+                width: 43%;
+                z-index: 1;
+
+                @media screen and (max-width: 767px) {
+                    border-bottom: 25px solid #646464;
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    font-size: 14px;
+                    left: -26px;
+                    top: 20px;
+                }
+            }
+
             .carousel-indicators {
                 bottom: -90px !important;
                 margin: 0;
+
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
+
                 li {
                     margin-left: 0;
                     height: 85px;
@@ -57,17 +93,21 @@ body {
                     }
                 }
             }
+
             .carousel-control-next,
             .carousel-control-prev {
                 opacity: 1;
             }
+
             .carousel-control-next,
             .carousel-control-prev {
                 width: 4.9%;
             }
+
             .carousel-control-prev-icon {
                 background-image: url('../images/carousel-arrow.png');
             }
+
             .carousel-control-next-icon {
                 background-image: url('../images/carousel-arrow.png');
                 transform: rotate(180deg);
@@ -122,6 +162,10 @@ body {
                 p {
                     font-size: 19px;
                     font-weight: bold;
+
+                    img {
+                        width: 10%;
+                    }
 
                     @media screen and (max-width: 767px) {
                         font-size: 26px;
@@ -220,16 +264,5 @@ body {
                 font-size: 16px;
             }
         }
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-    .tabs__content {
-        font-size: 18px;
-    }
-
-    .footer__text {
-        font-size: 18px;
     }
 }
