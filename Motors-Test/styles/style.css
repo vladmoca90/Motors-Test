@@ -21,6 +21,7 @@ body {
     @media screen and (max-width: 767px) {
       body .content__title {
         font-size: 28px;
+        line-height: 27px;
         text-align: center; } }
   body .content__data-row {
     display: flex;
