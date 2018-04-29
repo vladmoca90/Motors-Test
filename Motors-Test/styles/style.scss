@@ -51,7 +51,7 @@ body {
 
             &-price {
                 background-color: #f2f2f2;
-                padding: 15px 0 10px;
+                padding: 17px 0 13px;
                 text-align: center;
                 @media screen and (max-width: 767px) {
                     order: 1;
@@ -67,7 +67,7 @@ body {
                     font-size: 12px;
 
                     @media screen and (max-width: 767px) {
-                        font-size: 17px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -83,7 +83,7 @@ body {
                     font-weight: bold;
                     
                     @media screen and (max-width: 767px) {
-                        font-size: 24px;
+                        font-size: 26px;
                     }
                 }
             }
@@ -92,13 +92,13 @@ body {
                 font-size: 13px;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 16px;
+                    font-size: 18px;
                     margin-top: 30px;
                 }
             }
 
             &-button {
-                background-color: #343434;
+                background-color: #000;
                 color: #fff;
                 cursor: pointer;
                 margin-top: 13px;
@@ -109,7 +109,7 @@ body {
         }
 
         .tabs {
-            color: #161615;
+            color: #000;
             display: flex;
             flex-flow: row wrap;
             width: 100%;
@@ -157,7 +157,7 @@ body {
                 order: 1;
 
                 @media screen and (max-width: 767px) {
-                    padding: 35px 10px 22px;
+                    padding: 30px 10px 22px;
                 }
             }
         }
