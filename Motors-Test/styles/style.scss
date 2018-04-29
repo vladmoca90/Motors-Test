@@ -1,37 +1,24 @@
-﻿@import url('https://fonts.google.com/specimen/Roboto+Condensed');
-
+﻿
 body {
-    font-family: Roboto;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
 
     .header {
-        font-size: 12px;
 
         &__row {
             display: flex;
+            font-size: 12px;
             justify-content: space-between;
 
             @media screen and (max-width: 767px) {
-                font-size: 16px;
-            }
-
-            &--right {
-                width: 16%;
-
-                @media screen and (max-width: 767px) {
-                    width: inherit;
-                }
+                font-size: 18px;
             }
         }
 
         &__text {
             img {
-                width: 12%;
-            }
-
-            &:nth-of-type(1) {
-                padding-right: 15px;
+                width: 10px;
             }
         }
     }
@@ -42,8 +29,7 @@ body {
             -webkit-font-smoothing: antialiased;
 
             @media screen and (max-width: 767px) {
-                font-size: 28px;
-                line-height: 27px;
+                font-size: 24px;
                 text-align: center;
             }
         }
@@ -77,8 +63,9 @@ body {
                     border-left: 25px solid transparent;
                     border-right: 25px solid transparent;
                     font-size: 14px;
-                    left: -26px;
-                    top: 20px;
+                    left: -31px;
+                    line-height: 25px;
+                    top: 31px;
                 }
             }
 
@@ -124,13 +111,16 @@ body {
         &__data {
             &-row {
                 display: flex;
-                flex-direction: row;
                 font-size: 13px;
                 margin-bottom: 10px;
 
+                @media screen and (max-width: 767px) {
+                    margin-top: 20px;
+                }
+
                 span {
                     @media screen and (max-width: 767px) {
-                        font-size: 21px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -152,7 +142,7 @@ body {
                     font-size: 14px;
 
                     @media screen and (max-width: 767px) {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -165,14 +155,14 @@ body {
                 }
 
                 p {
-                    font-size: 19px;
+                    font-size: 18px;
 
                     img {
                         width: 10%;
                     }
 
                     @media screen and (max-width: 767px) {
-                        font-size: 26px;
+                        font-size: 24px;
                     }
                 }
             }
@@ -181,7 +171,7 @@ body {
                 font-size: 13px;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 19px;
+                    font-size: 18px;
                     margin-top: 30px;
                 }
             }
@@ -192,7 +182,7 @@ body {
                 cursor: pointer;
                 margin-top: 13px;
                 padding: 9px 0;
-                
+
                 @media screen and (max-width: 767px) {
                     padding: 11px 0;
                 }
@@ -218,8 +208,8 @@ body {
                 padding: 10px 30px;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 0.99rem;
-                    padding: 15px 13px;
+                    font-size: 0.98rem;
+                    padding: 18px 13px;
                 }
             }
 
@@ -252,8 +242,8 @@ body {
                 order: 1;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 0.95rem;
-                    padding: 30px 15px 22px;
+                    font-size: 0.99rem;
+                    padding: 35px 17px 25px;
                 }
             }
         }
@@ -267,7 +257,7 @@ body {
             font-size: 12px;
 
             @media screen and (max-width: 767px) {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
