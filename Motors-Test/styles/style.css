@@ -1,6 +1,6 @@
 ﻿@import url("https://fonts.google.com/specimen/Roboto+Condensed");
 body {
-  font-family: Roboto Condensed;
+  font-family: Roboto;
   margin: 0;
   padding: 0; }
   body .header {
@@ -11,14 +11,17 @@ body {
       @media screen and (max-width: 767px) {
         body .header__row {
           font-size: 16px; } }
+      body .header__row--right {
+        width: 16%; }
+        @media screen and (max-width: 767px) {
+          body .header__row--right {
+            width: inherit; } }
     body .header__text img {
-      width: 18%; }
+      width: 12%; }
     body .header__text:nth-of-type(1) {
       padding-right: 15px; }
   body .content__title {
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
     -webkit-font-smoothing: antialiased; }
     @media screen and (max-width: 767px) {
       body .content__title {
@@ -36,13 +39,14 @@ body {
       border-left: 33px solid transparent;
       border-right: 33px solid transparent;
       color: #fff;
+      font-size: 13px;
       height: 0;
-      left: -9.2%;
+      left: -8.6%;
       line-height: 32px;
       position: absolute;
       text-align: center;
       transform: rotate(-45deg);
-      top: 11%;
+      top: 14%;
       width: 43%;
       z-index: 1; }
       @media screen and (max-width: 767px) {
@@ -79,21 +83,19 @@ body {
   body .content__data-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 13px;
     margin-bottom: 10px; }
     @media screen and (max-width: 767px) {
       body .content__data-row span {
         font-size: 21px; } }
   body .content__data-price {
     background-color: #f2f2f2;
-    padding: 17px 0 13px;
-    text-align: center; }
+    padding: 7px 0 13px; }
     @media screen and (max-width: 767px) {
       body .content__data-price {
         order: 1; } }
     body .content__data-price p {
-      font-size: 26px;
-      font-weight: bold;
+      font-size: 22px;
       margin-bottom: 0; }
     body .content__data-price span {
       font-size: 14px; }
@@ -101,13 +103,12 @@ body {
         body .content__data-price span {
           font-size: 18px; } }
   body .content__data-contact {
-    margin: 30px 0 0 auto; }
+    margin: 50px 0 0 auto; }
     @media screen and (max-width: 767px) {
       body .content__data-contact {
         margin-top: 10px; } }
     body .content__data-contact p {
-      font-size: 19px;
-      font-weight: bold; }
+      font-size: 19px; }
       body .content__data-contact p img {
         width: 10%; }
       @media screen and (max-width: 767px) {
@@ -117,16 +118,17 @@ body {
     font-size: 13px; }
     @media screen and (max-width: 767px) {
       body .content__data-buttons {
-        font-size: 18px;
+        font-size: 19px;
         margin-top: 30px; } }
   body .content__data-button {
     background-color: #000;
     color: #fff;
     cursor: pointer;
     margin-top: 13px;
-    padding: 12px 0;
-    text-align: center;
-    transition: background-color 0.3s ease-in; }
+    padding: 9px 0; }
+    @media screen and (max-width: 767px) {
+      body .content__data-button {
+        padding: 11px 0; } }
   body .content .tabs {
     color: #000;
     display: flex;
@@ -139,12 +141,12 @@ body {
     body .content .tabs__button {
       background: #efefef;
       cursor: pointer;
-      font-size: .9rem;
+      font-size: 13px;
       margin-bottom: 0;
-      padding: 10px 30px;
-      text-align: center; }
+      padding: 10px 30px; }
       @media screen and (max-width: 767px) {
         body .content .tabs__button {
+          font-size: 0.99rem;
           padding: 15px 13px; } }
     body .content .tabs__input, body .content .tabs__content {
       display: none;
@@ -159,20 +161,20 @@ body {
         display: block; }
     body .content .tabs__content {
       background: #e0dcd9;
-      font-size: 0.95rem;
+      font-size: 12px;
       height: 100%;
-      min-height: 120px;
-      padding: 35px 35px 50px 35px;
+      padding: 20px 30px 35px;
       order: 1; }
       @media screen and (max-width: 767px) {
         body .content .tabs__content {
+          font-size: 0.95rem;
           padding: 30px 15px 22px; } }
   body .footer {
-    margin-top: 25px; }
+    margin-top: 30px; }
     body .footer__text {
       color: #ababab;
       font-size: 12px; }
       @media screen and (max-width: 767px) {
         body .footer__text {
-          font-size: 16px; } }
+          font-size: 18px; } }
 
