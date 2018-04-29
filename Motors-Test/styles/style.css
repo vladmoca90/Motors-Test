@@ -10,11 +10,13 @@ body {
       justify-content: space-between; }
       @media screen and (max-width: 767px) {
         body .header__row {
-          font-size: 18px; } }
+          font-size: 16px; } }
+    body .header__text img {
+      width: 18%; }
     body .header__text:nth-of-type(1) {
       padding-right: 15px; }
   body .content__title {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased; }
@@ -24,10 +26,33 @@ body {
         line-height: 27px;
         text-align: center; } }
   body .content__carousel {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    position: relative; }
     @media screen and (max-width: 767px) {
       body .content__carousel {
         margin-bottom: 0; } }
+    body .content__carousel-banner {
+      border-bottom: 33px solid #646464;
+      border-left: 33px solid transparent;
+      border-right: 33px solid transparent;
+      color: #fff;
+      height: 0;
+      left: -9.2%;
+      line-height: 32px;
+      position: absolute;
+      text-align: center;
+      transform: rotate(-45deg);
+      top: 11%;
+      width: 43%;
+      z-index: 1; }
+      @media screen and (max-width: 767px) {
+        body .content__carousel-banner {
+          border-bottom: 25px solid #646464;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          font-size: 14px;
+          left: -26px;
+          top: 20px; } }
     body .content__carousel .carousel-indicators {
       bottom: -90px !important;
       margin: 0; }
@@ -67,11 +92,11 @@ body {
       body .content__data-price {
         order: 1; } }
     body .content__data-price p {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
       margin-bottom: 0; }
     body .content__data-price span {
-      font-size: 12px; }
+      font-size: 14px; }
       @media screen and (max-width: 767px) {
         body .content__data-price span {
           font-size: 18px; } }
@@ -83,6 +108,8 @@ body {
     body .content__data-contact p {
       font-size: 19px;
       font-weight: bold; }
+      body .content__data-contact p img {
+        width: 10%; }
       @media screen and (max-width: 767px) {
         body .content__data-contact p {
           font-size: 26px; } }
@@ -148,10 +175,4 @@ body {
       @media screen and (max-width: 767px) {
         body .footer__text {
           font-size: 16px; } }
-
-@media screen and (max-width: 767px) {
-  .tabs__content {
-    font-size: 18px; }
-  .footer__text {
-    font-size: 18px; } }
 

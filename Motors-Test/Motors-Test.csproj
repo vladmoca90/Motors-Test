@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -96,7 +97,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\audi.jpg" />
+    <Content Include="images\calendar.jpg" />
     <Content Include="images\carousel-arrow.png" />
+    <Content Include="images\couple.jpg" />
+    <Content Include="images\door.jpg" />
+    <Content Include="images\gas.jpg" />
+    <Content Include="images\grey.jpg" />
+    <Content Include="images\manual.jpg" />
+    <Content Include="images\miles.jpg" />
+    <Content Include="images\na.jpg" />
+    <Content Include="images\phone.jpg" />
+    <Content Include="images\print.jpg" />
+    <Content Include="images\rov.jpg" />
+    <Content Include="images\service.jpg" />
+    <Content Include="images\share.jpg" />
+    <Content Include="images\top-arrow.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
