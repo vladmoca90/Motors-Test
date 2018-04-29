@@ -30,7 +30,7 @@ body {
 
     .content {
         &__title {
-            font-size: 21px;
+            font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
             -webkit-font-smoothing: antialiased;
@@ -138,13 +138,13 @@ body {
                 }
 
                 p {
-                    font-size: 30px;
+                    font-size: 26px;
                     font-weight: bold;
                     margin-bottom: 0;
                 }
 
                 span {
-                    font-size: 12px;
+                    font-size: 14px;
 
                     @media screen and (max-width: 767px) {
                         font-size: 18px;
