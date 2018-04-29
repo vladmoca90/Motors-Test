@@ -23,6 +23,28 @@ body {
         font-size: 28px;
         line-height: 27px;
         text-align: center; } }
+  body .content__carousel {
+    margin-bottom: 100px; }
+    body .content__carousel .carousel-indicators {
+      bottom: -90px !important;
+      margin: 0; }
+      body .content__carousel .carousel-indicators li {
+        margin-left: 0;
+        height: 85px;
+        width: 125px; }
+        body .content__carousel .carousel-indicators li:last-of-type {
+          margin-right: 0; }
+    body .content__carousel .carousel-control-next,
+    body .content__carousel .carousel-control-prev {
+      opacity: 1; }
+    body .content__carousel .carousel-control-next,
+    body .content__carousel .carousel-control-prev {
+      width: 4.9%; }
+    body .content__carousel .carousel-control-prev-icon {
+      background-image: url("../images/carousel-arrow.png"); }
+    body .content__carousel .carousel-control-next-icon {
+      background-image: url("../images/carousel-arrow.png");
+      transform: rotate(180deg); }
   body .content__data-row {
     display: flex;
     flex-direction: row;
