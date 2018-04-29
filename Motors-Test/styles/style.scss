@@ -38,9 +38,15 @@ body {
 
         &__carousel {
             margin-bottom: 100px;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 0;
+            }
             .carousel-indicators {
                 bottom: -90px !important;
                 margin: 0;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
                 li {
                     margin-left: 0;
                     height: 85px;
@@ -147,7 +153,12 @@ body {
             color: #000;
             display: flex;
             flex-flow: row wrap;
+            margin-top: 30px;
             width: 100%;
+
+            @media screen and (max-width: 767px) {
+                margin-top: 20px;
+            }
 
             &__button {
                 background: #efefef;
@@ -192,7 +203,7 @@ body {
                 order: 1;
 
                 @media screen and (max-width: 767px) {
-                    padding: 30px 10px 22px;
+                    padding: 30px 15px 22px;
                 }
             }
         }
