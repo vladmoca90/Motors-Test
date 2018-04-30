@@ -12,12 +12,17 @@ body {
 
             @media screen and (max-width: 767px) {
                 font-size: 18px;
+                justify-content: space-between;
             }
         }
 
         &__text {
             &:nth-child(2) {
                 margin: 0 20px 0 auto;
+
+                @media screen and (max-width: 767px) {
+                    margin: 0;
+                }
             }
 
             img {
@@ -33,6 +38,8 @@ body {
 
             @media screen and (max-width: 767px) {
                 font-size: 24px;
+                line-height: 27px;
+                margin-bottom: 5px;
                 text-align: center;
             }
         }
@@ -59,10 +66,10 @@ body {
                     border-bottom: 25px solid #646464;
                     border-left: 25px solid transparent;
                     border-right: 25px solid transparent;
-                    font-size: 14px;
-                    left: -31px;
+                    font-size: 12px;
+                    left: -8.5%;
                     line-height: 25px;
-                    top: 31px;
+                    width: 39%;
                 }
             }
 
@@ -120,12 +127,17 @@ body {
 
                 @media screen and (max-width: 767px) {
                     order: 1;
+                    padding: 17px 0 10px 0;
                 }
             }
 
             &-text {
                 font-size: 20px;
                 margin-bottom: 0;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 28px;
+                }
             }
 
             &-note {
@@ -141,18 +153,26 @@ body {
                 margin: 42px 0 0 auto;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 24px;
-                    margin-top: 10px;
+                    font-size: 22px;
+                    margin: 18px auto;
                 }
 
                 img {
                     width: 12%;
+
+                    @media screen and (max-width: 767px) {
+                        width: 8%;
+                    }
                 }
             }
         }
 
         &__icons {
             margin-left: 35px;
+
+            @media screen and (max-width: 767px) {
+                margin: 10px 0 0;
+            }
 
             &-row {
                 font-size: 13px;
@@ -184,7 +204,7 @@ body {
             width: 100%;
 
             @media screen and (max-width: 767px) {
-                margin-top: 20px;
+                margin-top: 30px;
             }
 
             &__button {
@@ -195,7 +215,7 @@ body {
                 padding: 7px 30px;
 
                 @media screen and (max-width: 767px) {
-                    font-size: 0.98rem;
+                    font-size: 0.855rem;
                     padding: 18px 13px;
                 }
             }
@@ -253,6 +273,10 @@ body {
             cursor: pointer;
             margin-bottom: 12px;
             padding: 7px 0;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
 
             @media screen and (max-width: 767px) {
                 background-color: #000;
