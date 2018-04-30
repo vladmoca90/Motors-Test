@@ -1,6 +1,6 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0; }
   body .header__row {
@@ -27,12 +27,12 @@ body {
       color: #fff;
       font-size: 13px;
       height: 0;
-      left: -8.8%;
+      left: -8%;
       line-height: 32px;
       position: absolute;
       transform: rotate(-45deg);
-      top: 14%;
-      width: 43%;
+      top: 11%;
+      width: 37%;
       z-index: 1; }
       @media screen and (max-width: 767px) {
         body .content__carousel-banner {
@@ -44,7 +44,7 @@ body {
           line-height: 25px;
           top: 31px; } }
     body .content__carousel .carousel-indicators {
-      bottom: -105px !important;
+      bottom: -103px !important;
       margin: 0; }
       @media screen and (max-width: 767px) {
         body .content__carousel .carousel-indicators {
@@ -58,11 +58,14 @@ body {
     body .content__carousel .carousel-control-next,
     body .content__carousel .carousel-control-prev {
       opacity: 1;
-      width: 6%; }
+      width: 5%; }
+    body .content__carousel .carousel-control-next,
+    body .content__carousel .carousel-control-prev {
+      top: -10px; }
     body .content__carousel .carousel-control-prev-icon,
     body .content__carousel .carousel-control-next-icon {
-      height: 35px;
-      width: 35px; }
+      height: 33px;
+      width: 25px; }
     body .content__carousel .carousel-control-prev-icon {
       background-image: url("../images/carousel-arrow.png"); }
     body .content__carousel .carousel-control-next-icon {
@@ -70,7 +73,7 @@ body {
       transform: rotate(180deg); }
   body .content__details-price {
     background-color: #f2f2f2;
-    padding: 7px 0 10px; }
+    padding: 7px 0; }
     @media screen and (max-width: 767px) {
       body .content__details-price {
         order: 1; } }
@@ -95,7 +98,7 @@ body {
     margin-left: 35px; }
     body .content__icons-row {
       font-size: 13px;
-      margin-bottom: 12px; }
+      margin-bottom: 11px; }
       @media screen and (max-width: 767px) {
         body .content__icons-row {
           margin-top: 20px; } }
@@ -117,9 +120,9 @@ body {
     body .content .tabs__button {
       background: #efefef;
       cursor: pointer;
-      font-size: 13px;
+      font-size: 12px;
       margin-bottom: 0;
-      padding: 10px 32px; }
+      padding: 7px 30px; }
       @media screen and (max-width: 767px) {
         body .content .tabs__button {
           font-size: 0.98rem;
@@ -137,9 +140,9 @@ body {
         display: block; }
     body .content .tabs__content {
       background: #e0dcd9;
-      font-size: 12px;
+      font-size: 11px;
       height: 100%;
-      padding: 22px 30px 33px;
+      padding: 20px 30px 33px;
       order: 1;
       width: 100%; }
       @media screen and (max-width: 767px) {
@@ -148,7 +151,7 @@ body {
           padding: 35px 17px 25px; } }
   body .content__buttons {
     font-size: 13px;
-    margin-top: -265px; }
+    margin-top: -220px; }
     @media screen and (max-width: 767px) {
       body .content__buttons {
         font-size: 18px;
@@ -157,7 +160,7 @@ body {
     background-color: #343434;
     color: #fff;
     cursor: pointer;
-    margin-top: 13px;
+    margin-bottom: 12px;
     padding: 7px 0; }
     @media screen and (max-width: 767px) {
       body .content__button-item {
@@ -167,10 +170,11 @@ body {
     margin-top: 30px; }
     body .footer__text {
       color: #7e7e7e;
-      font-size: 12px; }
+      font-size: 11px; }
       @media screen and (max-width: 767px) {
         body .footer__text {
           font-size: 16px; } }
-  body .text-bold--mobile {
-    font-weight: bold; }
+  @media screen and (max-width: 767px) {
+    body .text-bold--mobile {
+      font-weight: bold; } }
 

@@ -1,7 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 
@@ -47,12 +47,12 @@ body {
                 color: #fff;
                 font-size: 13px;
                 height: 0;
-                left: -8.8%;
+                left: -8%;
                 line-height: 32px;
                 position: absolute;
                 transform: rotate(-45deg);
-                top: 14%;
-                width: 43%;
+                top: 11%;
+                width: 37%;
                 z-index: 1;
 
                 @media screen and (max-width: 767px) {
@@ -67,7 +67,7 @@ body {
             }
 
             .carousel-indicators {
-                bottom: -105px !important;
+                bottom: -103px !important;
                 margin: 0;
 
                 @media screen and (max-width: 767px) {
@@ -88,13 +88,18 @@ body {
             .carousel-control-next,
             .carousel-control-prev {
                 opacity: 1;
-                width: 6%;
+                width: 5%;
             }
 
-             .carousel-control-prev-icon,
+            .carousel-control-next,
+            .carousel-control-prev {
+                top: -10px;
+            }
+
+            .carousel-control-prev-icon,
             .carousel-control-next-icon {
-                height: 35px;
-                width: 35px;
+                height: 33px;
+                width: 25px;
             }
 
             .carousel-control-prev-icon {
@@ -111,7 +116,7 @@ body {
 
             &-price {
                 background-color: #f2f2f2;
-                padding: 7px 0 10px;
+                padding: 7px 0;
 
                 @media screen and (max-width: 767px) {
                     order: 1;
@@ -151,7 +156,7 @@ body {
 
             &-row {
                 font-size: 13px;
-                margin-bottom: 12px;
+                margin-bottom: 11px;
 
                 @media screen and (max-width: 767px) {
                     margin-top: 20px;
@@ -186,9 +191,9 @@ body {
             &__button {
                 background: #efefef;
                 cursor: pointer;
-                font-size: 13px;
+                font-size: 12px;
                 margin-bottom: 0;
-                padding: 10px 32px;
+                padding: 7px 30px;
 
                 @media screen and (max-width: 767px) {
                     font-size: 0.98rem;
@@ -220,9 +225,9 @@ body {
 
             &__content {
                 background: #e0dcd9;
-                font-size: 12px;
+                font-size: 11px;
                 height: 100%;
-                padding: 22px 30px 33px;
+                padding: 20px 30px 33px;
                 order: 1;
                 width: 100%;
 
@@ -235,7 +240,7 @@ body {
 
         &__buttons {
             font-size: 13px;
-            margin-top: -265px;
+            margin-top: -220px;
 
             @media screen and (max-width: 767px) {
                 font-size: 18px;
@@ -247,7 +252,7 @@ body {
             background-color: #343434;
             color: #fff;
             cursor: pointer;
-            margin-top: 13px;
+            margin-bottom: 12px;
             padding: 7px 0;
 
             @media screen and (max-width: 767px) {
@@ -262,7 +267,7 @@ body {
 
         &__text {
             color: #7e7e7e;
-            font-size: 12px;
+            font-size: 11px;
 
             @media screen and (max-width: 767px) {
                 font-size: 16px;
@@ -271,6 +276,8 @@ body {
     }
 
     .text-bold--mobile {
-        font-weight: bold;
+        @media screen and (max-width: 767px) {
+            font-weight: bold;
+        }
     }
 }
