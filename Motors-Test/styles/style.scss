@@ -1,15 +1,14 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
 
     .header {
 
         &__row {
-            display: flex;
             font-size: 12px;
-            justify-content: space-between;
 
             @media screen and (max-width: 767px) {
                 font-size: 18px;
@@ -17,6 +16,10 @@ body {
         }
 
         &__text {
+            &:nth-child(2) {
+                margin: 0 20px 0 auto;
+            }
+
             img {
                 width: 10px;
             }
@@ -26,7 +29,7 @@ body {
     .content {
 
         &__title {
-            font-size: 21px;
+            font-size: 24px;
 
             @media screen and (max-width: 767px) {
                 font-size: 24px;
@@ -35,12 +38,7 @@ body {
         }
 
         &__carousel {
-            margin-bottom: 100px;
             position: relative;
-
-            @media screen and (max-width: 767px) {
-                margin-bottom: 0;
-            }
 
             &-banner {
                 border-bottom: 33px solid #646464;
@@ -49,10 +47,9 @@ body {
                 color: #fff;
                 font-size: 13px;
                 height: 0;
-                left: -8.6%;
+                left: -8.8%;
                 line-height: 32px;
                 position: absolute;
-                text-align: center;
                 transform: rotate(-45deg);
                 top: 14%;
                 width: 43%;
@@ -70,7 +67,7 @@ body {
             }
 
             .carousel-indicators {
-                bottom: -90px !important;
+                bottom: -105px !important;
                 margin: 0;
 
                 @media screen and (max-width: 767px) {
@@ -79,7 +76,7 @@ body {
 
                 li {
                     margin-left: 0;
-                    height: 85px;
+                    height: 100px;
                     width: 125px;
 
                     &:last-of-type {
@@ -91,11 +88,13 @@ body {
             .carousel-control-next,
             .carousel-control-prev {
                 opacity: 1;
+                width: 6%;
             }
 
-            .carousel-control-next,
-            .carousel-control-prev {
-                width: 4.85%;
+             .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                height: 35px;
+                width: 35px;
             }
 
             .carousel-control-prev-icon {
@@ -134,7 +133,7 @@ body {
 
             &-contact {
                 font-size: 20px;
-                margin: 40px 0 0 auto;
+                margin: 42px 0 0 auto;
 
                 @media screen and (max-width: 767px) {
                     font-size: 24px;
@@ -176,7 +175,6 @@ body {
 
         .tabs {
             color: #000;
-            display: flex;
             flex-flow: row wrap;
             margin-top: 30px;
             width: 100%;
@@ -190,7 +188,7 @@ body {
                 cursor: pointer;
                 font-size: 13px;
                 margin-bottom: 0;
-                padding: 10px 30px;
+                padding: 10px 32px;
 
                 @media screen and (max-width: 767px) {
                     font-size: 0.98rem;
@@ -198,7 +196,7 @@ body {
                 }
             }
 
-            &__input,
+            &__check,
             &__content {
                 display: none;
                 font-size: 12px;
@@ -208,7 +206,8 @@ body {
                 }
             }
 
-            &__input {
+            &__check {
+
                 &:checked + label {
                     background: #e0dcd9;
                     font-weight: bold;
@@ -223,7 +222,7 @@ body {
                 background: #e0dcd9;
                 font-size: 12px;
                 height: 100%;
-                padding: 20px 30px 35px;
+                padding: 22px 30px 33px;
                 order: 1;
                 width: 100%;
 
@@ -235,7 +234,7 @@ body {
         }
 
         &__buttons {
-            font-size: 12px;
+            font-size: 13px;
             margin-top: -265px;
 
             @media screen and (max-width: 767px) {
@@ -249,7 +248,7 @@ body {
             color: #fff;
             cursor: pointer;
             margin-top: 13px;
-            padding: 8px 0;
+            padding: 7px 0;
 
             @media screen and (max-width: 767px) {
                 background-color: #000;
@@ -262,12 +261,16 @@ body {
         margin-top: 30px;
 
         &__text {
-            color: #ababab;
+            color: #7e7e7e;
             font-size: 12px;
 
             @media screen and (max-width: 767px) {
                 font-size: 16px;
             }
         }
+    }
+
+    .text-bold--mobile {
+        font-weight: bold;
     }
 }
