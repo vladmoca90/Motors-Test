@@ -97,11 +97,13 @@ body {
         font-size: 16px; } }
   body .content__details-contact {
     font-size: 20px;
-    margin: 42px 0 0 auto; }
+    margin: 50px 0 0 auto; }
     @media screen and (max-width: 767px) {
       body .content__details-contact {
         font-size: 22px;
         margin: 18px auto; } }
+    body .content__details-contact p {
+      margin-bottom: 0; }
     body .content__details-contact img {
       width: 12%; }
       @media screen and (max-width: 767px) {
