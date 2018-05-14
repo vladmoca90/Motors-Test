@@ -14,8 +14,9 @@ body {
     @media screen and (max-width: 767px) {
       body .header__text:nth-child(2) {
         margin: 0; } }
-  body .header__text img {
-    width: 10px; }
+  body .header__img {
+    padding-bottom: 1px;
+    width: 9px; }
   body .content__title {
     font-size: 21px; }
     @media screen and (max-width: 767px) {
