@@ -6,6 +6,7 @@ body {
     padding: 0;
 
     .header {
+
         &__row {
             font-size: 12px;
 
@@ -15,6 +16,7 @@ body {
             }
         }
         &__text {
+
             &:nth-child(2) {
                 margin: 0 20px 0 auto;
 
@@ -30,6 +32,7 @@ body {
     }
 
     .content {
+
         &__title {
             font-size: 21px;
 
@@ -42,6 +45,7 @@ body {
         }
         &__carousel {
             position: relative;
+
             &-banner {
                 border-bottom: 33px solid #646464;
                 border-left: 33px solid transparent;
@@ -67,6 +71,7 @@ body {
                     width: 39%;
                 }
             }
+
             .carousel-indicators {
                 bottom: -103px !important;
                 margin: 0;
@@ -74,10 +79,12 @@ body {
                 @media screen and (max-width: 767px) {
                     display: none;
                 }
+
                 li {
-                    margin-left: 0;
                     height: 100px;
+                    margin-left: 0;
                     width: 125px;
+
                     &:last-of-type {
                         margin-right: 0;
                     }
@@ -88,24 +95,30 @@ body {
                 opacity: 1;
                 width: 5%;
             }
+
             .carousel-control-next,
             .carousel-control-prev {
                 top: -10px;
             }
+
             .carousel-control-prev-icon,
             .carousel-control-next-icon {
                 height: 33px;
                 width: 25px;
             }
+
             .carousel-control-prev-icon {
                 background-image: url('../images/carousel-arrow.png');
             }
+
             .carousel-control-next-icon {
                 background-image: url('../images/carousel-arrow.png');
                 transform: rotate(180deg);
             }
         }
+
         &__details {
+
             &-price {
                 background-color: #f2f2f2;
                 padding: 7px 0;
@@ -115,29 +128,37 @@ body {
                     padding: 17px 0 10px 0;
                 }
             }
+
             &-text {
                 font-size: 20px;
                 margin-bottom: 0;
+
                 @media screen and (max-width: 767px) {
                     font-size: 28px;
                 }
             }
+
             &-note {
                 font-size: 12px;
+
                 @media screen and (max-width: 767px) {
                     font-size: 16px;
                 }
             }
+
             &-contact {
                 font-size: 20px;
                 margin: 50px 0 0 auto;
+
                 @media screen and (max-width: 767px) {
                     font-size: 22px;
                     margin: 18px auto;
                 }
+
                 p {
                     margin-bottom: 0;
                 }
+
                 img {
                     width: 12%;
                     @media screen and (max-width: 767px) {
@@ -146,43 +167,54 @@ body {
                 }
             }
         }
+
         &__icons {
             margin-left: 35px;
+
             @media screen and (max-width: 767px) {
                 margin: 10px 0 0;
             }
+
             &-row {
                 font-size: 13px;
                 margin-bottom: 11px;
+
                 @media screen and (max-width: 767px) {
                     margin-top: 20px;
                 }
+
                 span {
                     @media screen and (max-width: 767px) {
                         font-size: 18px;
                     }
+
                     &:nth-of-type(1) {
                         margin-right: 10px;
                     }
+
                     img {
                         width: 15%;
                     }
                 }
             }
         }
+
         .tabs {
             color: #000;
             flex-flow: row wrap;
             width: 100%;
+
             @media screen and (max-width: 767px) {
                 margin-top: 30px;
             }
+
             &__button {
-                background: #efefef;
+                background-color: #efefef;
                 cursor: pointer;
                 font-size: 12px;
                 margin-bottom: 0;
                 padding: 7px 30px;
+
                 @media screen and (max-width: 767px) {
                     font-size: 0.855rem;
                     padding: 18px 13px;
@@ -198,7 +230,7 @@ body {
             }
             &__check {
                 &:checked + label {
-                    background: #e0dcd9;
+                    background-color: #e0dcd9;
                     font-weight: bold;
                     + .tabs__content {
                         display: block;
@@ -206,7 +238,7 @@ body {
                 }
             }
             &__content {
-                background: #e0dcd9;
+                background-color: #e0dcd9;
                 font-size: 11px;
                 height: 100%;
                 padding: 20px 30px 33px;
